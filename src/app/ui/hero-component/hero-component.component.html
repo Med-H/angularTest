@@ -2,7 +2,9 @@
   [ngClass]="{'selectedHero' : selectedHero === hero,'hero' : true}"
   (click)="onSelect(hero)">
   <label for='name'>Hero name: </label>
+  <!-- ngModel is angular two way data binding -->
   <input id='name' [(ngModel)]="hero.name" placeholder="name">
 </div>
+<!-- next is an Angular property binding. -->
 <hero-detail [hero]="selectedHero"></hero-detail>
 
