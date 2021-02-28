@@ -32,12 +32,20 @@ module.exports = function (config) {
         { type: 'text-summary' }
       ]
     },
+    browsers: [/*'ChromeHeadless',*/'Chrome'],
+    customLaunchers: {
+      ChromeHeadlessDebugging: {
+        base: 'ChromeHeadless',
+        flags: [
+          '--remote-debugging-port=9222'
+        ]
+      }
+    },
     reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
     singleRun: false,
     restartOnFileChange: true
   });
