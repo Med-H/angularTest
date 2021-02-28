@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core'
-import { Hero } from 'src/app/model/hero/hero'
+import { Hero } from '../../model/hero/hero'
+import { MessageService } from '../../services/messages/message.service'
 
 @Component({
   selector: 'hero-detail',
@@ -8,9 +9,7 @@ import { Hero } from 'src/app/model/hero/hero'
 })
 export class HeroDetailComponent implements OnInit {
   @Input() hero: Hero | undefined
-  constructor() { }
+  constructor(private messageService: MessageService) { }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

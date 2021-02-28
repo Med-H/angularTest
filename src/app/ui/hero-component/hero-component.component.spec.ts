@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing'
-
 import { HeroComponentComponent } from './hero-component.component'
 
 describe('HeroComponentComponent', () => {
@@ -22,6 +21,4 @@ describe('HeroComponentComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy()
   })
-
-
 })
