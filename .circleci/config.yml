@@ -19,7 +19,7 @@ jobs:
       - run:
           name: build
           command: npm run build
-      # - sonarcloud/scan
+      - sonarcloud/scan
   test:
     working_directory: ~/my-project
     docker:
