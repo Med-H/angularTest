@@ -1,4 +1,5 @@
 version: 2.1
+
 jobs:
   build:
     working_directory: ~/my-project
@@ -50,12 +51,12 @@ jobs:
 
 orbs:
   sonarcloud: sonarsource/sonarcloud@1.0.2
+
 workflows:
   version: 2
   build_and_test:
     jobs:
-      - build:
-          context: SonarCloud
+      - build
       - test
       - e2e
 
