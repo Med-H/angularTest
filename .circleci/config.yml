@@ -19,7 +19,7 @@ jobs:
       - run:
           name: build
           command: npm run build
-      - sonarcloud/scan
+      # - sonarcloud/scan
   test:
     working_directory: ~/my-project
     docker:
@@ -56,7 +56,8 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-      - build
+      - build:
+          context: SonarCloud
       - test
       - e2e
 
