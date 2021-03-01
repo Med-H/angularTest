@@ -3,7 +3,7 @@ import { Hero } from 'src/app/model/hero/hero';
 import { Observable, of } from 'rxjs';
 import { MessageService } from '../messages/message.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { catchError, map, tap } from 'rxjs/operators';
+import { catchError, tap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'

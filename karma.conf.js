@@ -32,7 +32,7 @@ module.exports = function (config) {
         { type: 'text-summary' }
       ]
     },
-    browsers: ['ChromeHeadlessCI'/*'ChromeHeadless','Chrome'*/],
+    browsers: [/*'ChromeHeadlessCI'*/'ChromeHeadless'/*,'Chrome'*/],
     customLaunchers: {
       ChromeHeadlessDebugging: {
         base: 'ChromeHeadless',
@@ -41,7 +41,7 @@ module.exports = function (config) {
         ]
       },
       ChromeHeadlessCI: {
-        base: 'ChromeHeadlessCI',
+        base: 'ChromeHeadless',
         flags: ['--no-sandbox']
       }
     },

@@ -1,4 +1,6 @@
+import { HttpClientModule } from '@angular/common/http'
 import { ComponentFixture, TestBed } from '@angular/core/testing'
+import { AppRoutingModule } from 'src/app/app-routing.module'
 import { HeroComponentComponent } from './hero-component.component'
 
 describe('HeroComponentComponent', () => {
@@ -7,6 +9,10 @@ describe('HeroComponentComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [
+        AppRoutingModule,
+        HttpClientModule
+      ],
       declarations: [ HeroComponentComponent ]
     })
     .compileComponents()
