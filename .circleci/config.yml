@@ -42,5 +42,5 @@ jobs:
           paths:
             - "node_modules"
       - run: npm run e2e -- --protractor-config=e2e/protractor-ci.conf.js
-orbs:
-  sonarcloud: sonarsource/sonarcloud@1.0.2
+# orbs:
+#  sonarcloud: sonarsource/sonarcloud@1.0.2
