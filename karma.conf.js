@@ -32,13 +32,17 @@ module.exports = function (config) {
         { type: 'text-summary' }
       ]
     },
-    browsers: [/*'ChromeHeadless',*/'Chrome'],
+    browsers: ['ChromeHeadlessCI'/*'ChromeHeadless','Chrome'*/],
     customLaunchers: {
       ChromeHeadlessDebugging: {
         base: 'ChromeHeadless',
         flags: [
           '--remote-debugging-port=9222'
         ]
+      },
+      ChromeHeadlessCI: {
+        base: 'ChromeHeadlessCI',
+        flags: ['--no-sandbox']
       }
     },
     reporters: ['progress', 'kjhtml'],
