@@ -50,5 +50,5 @@ workflows:
       - test
       - e2e
 
-# orbs:
-#  sonarcloud: sonarsource/sonarcloud@1.0.2
+orbs:
+  sonarcloud: sonarsource/sonarcloud@1.0.2
